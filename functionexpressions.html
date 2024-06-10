@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function sayHi(){
+        //     alert("hi");
+        // }
+        // let func= sayHi;
+        // func();
+        // let ddd=function(){
+        //     alert('hi');
+        // }
+        // let sayHi=function(){
+        //     alert("hi")
+        // };
+        // let funcc=ddd;
+        function ask(question,yes,no){
+            if(confirm(question)) yes()
+            else no();
+        }
+        function showOk(){
+            alert('you said yes')
+        }
+        function showCancel(){
+            alert( "شما اجرا شدن را لغو کردید." );
+        }
+        ask("do you agree?",showOk,showCancel);
+    </script>
+</body>
+</html>
